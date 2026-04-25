@@ -1,72 +1,75 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Responsive Images - Complete Guide 2026</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Sora:wght@300;400;600;700&display=swap"
-      rel="stylesheet"
-    />
 
-    <link rel="stylesheet" href="index.css" />
-  </head>
-  <body>
-    <div class="site-header">
-      <a
-        href="profile.html"
-        class="label"
-        style="text-decoration: none; display: inline-block"
-      >
-        See My Profile
-      </a>
-    </div>
-    <div class="page">
-      <!-- HEADER -->
-      <header class="site-header">
-        <div class="label">Complete Guide 2026</div>
-        <h1>Responsive Images<br /><span>— Copy, Paste, Done</span></h1>
-        <p>
-          Easy to understand code examples for every image technique. Just copy
-          what you need and add to your website. No complicated setup needed.
-        </p>
-      </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive Images - Complete Guide 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Sora:wght@300;400;600;700&display=swap"
+    rel="stylesheet" />
 
-      <!-- 1. BASIC RESPONSIVE IMAGE -->
-      <div class="technique">
-        <div class="technique__header">
-          <div class="num">01</div>
-          <div>
-            <h2>Basic Responsive Image</h2>
-            <p>The most important technique - use this for every image</p>
-          </div>
+  <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__inner">
+      <a href="profile.html" class="profile-link">
+        <img src="/profile.png" alt="Profile picture" class="head-profile-pic" />
+
+        <div class="user-info">
+          <h1>M Haris</h1>
+          <span>View Profile</span>
         </div>
-        <div class="technique__body">
-          <div class="info-bar">
-            <strong>When to use:</strong> This is the basic CSS that every image
-            needs.
-          </div>
-          <div class="demo">
-            <div class="demo-label">See the live image</div>
-            <img
-              src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&h=600&fit=crop"
-              alt="Mountain landscape"
-              class="ex1-img"
-              loading="lazy"
-            />
-          </div>
-          <div class="code-block">
-            <div class="code-block__bar">
-              <div class="dots">
-                <span class="d1"></span><span class="d2"></span
-                ><span class="d3"></span>
-              </div>
-              <span class="code-block__lang">HTML + CSS</span>
-              <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+      </a>
+      <nav class="header__nav">
+        <a href="profile.html">Profile</a>
+        <a href="https://github.com/harisdevify" target="_blank">GitHub ↗</a>
+      </nav>
+    </div>
+  </header>
+  <div class="page">
+    <!-- HEADER -->
+    <header class="site-header">
+      <div class="label fade-up d-1">Complete Guide 2026</div>
+      <h1 class="fade-up d-2">Responsive Images<br /><span>— Copy, Paste, Done</span></h1>
+      <p class="fade-up d-3">
+        Easy to understand code examples for every image technique. Just copy
+        what you need and add to your website. No complicated setup needed.
+      </p>
+    </header>
+
+    <!-- 1. BASIC RESPONSIVE IMAGE -->
+    <div class="technique">
+      <div class="technique__header ">
+        <div class="num">01</div>
+        <div class="fade-up d-4">
+          <h2>Basic Responsive Image</h2>
+          <p>The most important technique - use this for every image</p>
+        </div>
+      </div>
+      <div class="technique__body">
+        <div class="info-bar fade-up d-5">
+          <strong>When to use:</strong> This is the basic CSS that every image
+          needs.
+        </div>
+        <div class="demo">
+          <div class="demo-label fade-up d-6">See the live image</div>
+          <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&h=600&fit=crop"
+            alt="Mountain landscape" class="ex1-img" loading="lazy" />
+        </div>
+        <div class="code-block">
+          <div class="code-block__bar">
+            <div class="dots">
+              <span class="d1"></span><span class="d2"></span><span class="d3"></span>
             </div>
-            <pre><span class="tag">&lt;img</span>
+            <span class="code-block__lang">HTML + CSS</span>
+            <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+          </div>
+          <pre><span class="tag">&lt;img</span>
   <span class="attr">src</span>=<span class="str">"your-image.jpg"</span>
   <span class="attr">alt</span>=<span class="str">"Image description"</span>
   <span class="attr">class</span>=<span class="str">"responsive-img"</span>
@@ -79,64 +82,54 @@
   <span class="kw">height</span>: <span class="val">auto</span>;
   <span class="kw">display</span>: <span class="val">block</span>;
 }</pre>
-          </div>
         </div>
-        <div class="resize-handle"></div>
       </div>
+      <div class="resize-handle"></div>
+    </div>
 
-      <!-- 2. OBJECT-FIT -->
-      <div class="technique">
-        <div class="technique__header">
-          <div class="num">02</div>
-          <div>
-            <h2>Object-Fit - Fit Image In A Box</h2>
-            <p>Three ways: cover, contain, fill</p>
+    <!-- 2. OBJECT-FIT -->
+    <div class="technique">
+      <div class="technique__header">
+        <div class="num">02</div>
+        <div>
+          <h2>Object-Fit - Fit Image In A Box</h2>
+          <p>Three ways: cover, contain, fill</p>
+        </div>
+      </div>
+      <div class="technique__body">
+        <div class="info-bar">
+          <strong>When to use:</strong> When you need a fixed height box and
+          want control over how the image fits.
+        </div>
+        <div class="demo">
+          <div class="demo-label">Same image, three different ways</div>
+          <div class="ex2-grid">
+            <div class="ex2-box">
+              <img src="https://images.unsplash.com/photo-1682687220742-aba13b6e50ba?w=600&h=400&fit=crop" alt="cover"
+                style="object-fit: cover" />
+              <div class="ex2-cap">object-fit: cover</div>
+            </div>
+            <div class="ex2-box">
+              <img src="https://images.unsplash.com/photo-1682687220742-aba13b6e50ba?w=600&h=400&fit=crop" alt="contain"
+                class="contain" />
+              <div class="ex2-cap">object-fit: contain</div>
+            </div>
+            <div class="ex2-box">
+              <img src="https://images.unsplash.com/photo-1682687220742-aba13b6e50ba?w=600&h=400&fit=crop" alt="fill"
+                class="fill" />
+              <div class="ex2-cap">object-fit: fill</div>
+            </div>
           </div>
         </div>
-        <div class="technique__body">
-          <div class="info-bar">
-            <strong>When to use:</strong> When you need a fixed height box and
-            want control over how the image fits.
-          </div>
-          <div class="demo">
-            <div class="demo-label">Same image, three different ways</div>
-            <div class="ex2-grid">
-              <div class="ex2-box">
-                <img
-                  src="https://images.unsplash.com/photo-1682687220742-aba13b6e50ba?w=600&h=400&fit=crop"
-                  alt="cover"
-                  style="object-fit: cover"
-                />
-                <div class="ex2-cap">object-fit: cover</div>
-              </div>
-              <div class="ex2-box">
-                <img
-                  src="https://images.unsplash.com/photo-1682687220742-aba13b6e50ba?w=600&h=400&fit=crop"
-                  alt="contain"
-                  class="contain"
-                />
-                <div class="ex2-cap">object-fit: contain</div>
-              </div>
-              <div class="ex2-box">
-                <img
-                  src="https://images.unsplash.com/photo-1682687220742-aba13b6e50ba?w=600&h=400&fit=crop"
-                  alt="fill"
-                  class="fill"
-                />
-                <div class="ex2-cap">object-fit: fill</div>
-              </div>
+        <div class="code-block">
+          <div class="code-block__bar">
+            <div class="dots">
+              <span class="d1"></span><span class="d2"></span><span class="d3"></span>
             </div>
+            <span class="code-block__lang">HTML + CSS</span>
+            <button class="copy-btn" onclick="copyCode(this)">Copy</button>
           </div>
-          <div class="code-block">
-            <div class="code-block__bar">
-              <div class="dots">
-                <span class="d1"></span><span class="d2"></span
-                ><span class="d3"></span>
-              </div>
-              <span class="code-block__lang">HTML + CSS</span>
-              <button class="copy-btn" onclick="copyCode(this)">Copy</button>
-            </div>
-            <pre><span class="tag">&lt;div</span> <span class="attr">class</span>=<span class="str">"image-box"</span><span class="tag">&gt;</span>
+          <pre><span class="tag">&lt;div</span> <span class="attr">class</span>=<span class="str">"image-box"</span><span class="tag">&gt;</span>
   <span class="tag">&lt;img</span> <span class="attr">src</span>=<span class="str">"image.jpg"</span> <span class="attr">alt</span>=<span class="str">"..."</span><span class="tag">&gt;</span>
 <span class="tag">&lt;/div&gt;</span>
 
@@ -155,76 +148,67 @@
   <span class="kw">object-position</span>: <span class="val">center</span>;
   <span class="kw">display</span>: <span class="val">block</span>;
 }</pre>
-          </div>
         </div>
-        <div class="resize-handle"></div>
       </div>
+      <div class="resize-handle"></div>
+    </div>
 
-      <!-- 3. ASPECT RATIO -->
-      <div class="technique">
-        <div class="technique__header">
-          <div class="num">03</div>
-          <div>
-            <h2>Aspect Ratio - Lock The Shape</h2>
-            <p>Keep image proportions consistent using CSS</p>
+    <!-- 3. ASPECT RATIO -->
+    <div class="technique">
+      <div class="technique__header">
+        <div class="num">03</div>
+        <div>
+          <h2>Aspect Ratio - Lock The Shape</h2>
+          <p>Keep image proportions consistent using CSS</p>
+        </div>
+      </div>
+      <div class="technique__body">
+        <div class="info-bar">
+          <strong>When to use:</strong> Cards, thumbnails, image grids - when
+          you need consistent shapes.
+        </div>
+        <div class="demo">
+          <div class="demo-label">16:9 — 1:1 — 4:3 — 3:4</div>
+          <div class="ex3-grid">
+            <div>
+              <div class="ar-box ar-16-9">
+                <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=800&h=450&fit=crop"
+                  alt="16:9" />
+              </div>
+              <div class="ar-label">16 : 9</div>
+            </div>
+            <div>
+              <div class="ar-box ar-1-1">
+                <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=500&h=500&fit=crop"
+                  alt="1:1" />
+              </div>
+              <div class="ar-label">1 : 1</div>
+            </div>
+            <div>
+              <div class="ar-box ar-4-3">
+                <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=600&h=450&fit=crop"
+                  alt="4:3" />
+              </div>
+              <div class="ar-label">4 : 3</div>
+            </div>
+            <div>
+              <div class="ar-box ar-3-4">
+                <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?w=450&h=600&fit=crop"
+                  alt="3:4" />
+              </div>
+              <div class="ar-label">3 : 4</div>
+            </div>
           </div>
         </div>
-        <div class="technique__body">
-          <div class="info-bar">
-            <strong>When to use:</strong> Cards, thumbnails, image grids - when
-            you need consistent shapes.
-          </div>
-          <div class="demo">
-            <div class="demo-label">16:9 — 1:1 — 4:3 — 3:4</div>
-            <div class="ex3-grid">
-              <div>
-                <div class="ar-box ar-16-9">
-                  <img
-                    src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=800&h=450&fit=crop"
-                    alt="16:9"
-                  />
-                </div>
-                <div class="ar-label">16 : 9</div>
-              </div>
-              <div>
-                <div class="ar-box ar-1-1">
-                  <img
-                    src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=500&h=500&fit=crop"
-                    alt="1:1"
-                  />
-                </div>
-                <div class="ar-label">1 : 1</div>
-              </div>
-              <div>
-                <div class="ar-box ar-4-3">
-                  <img
-                    src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=600&h=450&fit=crop"
-                    alt="4:3"
-                  />
-                </div>
-                <div class="ar-label">4 : 3</div>
-              </div>
-              <div>
-                <div class="ar-box ar-3-4">
-                  <img
-                    src="https://images.unsplash.com/photo-1519681393784-d120267933ba?w=450&h=600&fit=crop"
-                    alt="3:4"
-                  />
-                </div>
-                <div class="ar-label">3 : 4</div>
-              </div>
+        <div class="code-block">
+          <div class="code-block__bar">
+            <div class="dots">
+              <span class="d1"></span><span class="d2"></span><span class="d3"></span>
             </div>
+            <span class="code-block__lang">HTML + CSS</span>
+            <button class="copy-btn" onclick="copyCode(this)">Copy</button>
           </div>
-          <div class="code-block">
-            <div class="code-block__bar">
-              <div class="dots">
-                <span class="d1"></span><span class="d2"></span
-                ><span class="d3"></span>
-              </div>
-              <span class="code-block__lang">HTML + CSS</span>
-              <button class="copy-btn" onclick="copyCode(this)">Copy</button>
-            </div>
-            <pre><span class="tag">&lt;div</span> <span class="attr">class</span>=<span class="str">"image-container ar-16-9"</span><span class="tag">&gt;</span>
+          <pre><span class="tag">&lt;div</span> <span class="attr">class</span>=<span class="str">"image-container ar-16-9"</span><span class="tag">&gt;</span>
   <span class="tag">&lt;img</span> <span class="attr">src</span>=<span class="str">"image.jpg"</span> <span class="attr">alt</span>=<span class="str">"..."</span><span class="tag">&gt;</span>
 <span class="tag">&lt;/div&gt;</span>
 
@@ -247,69 +231,60 @@
 <span class="prop">.ar-1-1</span>   { <span class="kw">aspect-ratio</span>: <span class="val">1/1</span>; }
 <span class="prop">.ar-4-3</span>   { <span class="kw">aspect-ratio</span>: <span class="val">4/3</span>; }
 <span class="prop">.ar-3-4</span>   { <span class="kw">aspect-ratio</span>: <span class="val">3/4</span>; }</pre>
-          </div>
         </div>
-        <div class="resize-handle"></div>
       </div>
+      <div class="resize-handle"></div>
+    </div>
 
-      <!-- 4. AUTO GRID -->
-      <div class="technique">
-        <div class="technique__header">
-          <div class="num">04</div>
-          <div>
-            <h2>Auto Grid - Responsive Layout</h2>
-            <p>Grid changes columns automatically based on screen size</p>
+    <!-- 4. AUTO GRID -->
+    <div class="technique">
+      <div class="technique__header">
+        <div class="num">04</div>
+        <div>
+          <h2>Auto Grid - Responsive Layout</h2>
+          <p>Grid changes columns automatically based on screen size</p>
+        </div>
+      </div>
+      <div class="technique__body">
+        <div class="info-bar">
+          <strong>When to use:</strong> Image galleries, portfolios, product
+          listings - auto changes to 1 column on mobile and 3-4 columns on
+          desktop.
+        </div>
+        <div class="demo">
+          <div class="demo-label">Resize browser to see it change</div>
+          <div class="auto-grid">
+            <div class="img-card">
+              <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=600&h=450&fit=crop"
+                alt="landscape 1" />
+              <div class="img-card__tag">auto-fit</div>
+            </div>
+            <div class="img-card">
+              <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=600&h=450&fit=crop"
+                alt="landscape 2" />
+              <div class="img-card__tag">responsive</div>
+            </div>
+            <div class="img-card">
+              <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?w=600&h=450&fit=crop"
+                alt="landscape 3" />
+              <div class="img-card__tag">no queries</div>
+            </div>
+            <div class="img-card">
+              <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&h=450&fit=crop"
+                alt="landscape 4" />
+              <div class="img-card__tag">works great</div>
+            </div>
           </div>
         </div>
-        <div class="technique__body">
-          <div class="info-bar">
-            <strong>When to use:</strong> Image galleries, portfolios, product
-            listings - auto changes to 1 column on mobile and 3-4 columns on
-            desktop.
-          </div>
-          <div class="demo">
-            <div class="demo-label">Resize browser to see it change</div>
-            <div class="auto-grid">
-              <div class="img-card">
-                <img
-                  src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=600&h=450&fit=crop"
-                  alt="landscape 1"
-                />
-                <div class="img-card__tag">auto-fit</div>
-              </div>
-              <div class="img-card">
-                <img
-                  src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=600&h=450&fit=crop"
-                  alt="landscape 2"
-                />
-                <div class="img-card__tag">responsive</div>
-              </div>
-              <div class="img-card">
-                <img
-                  src="https://images.unsplash.com/photo-1519681393784-d120267933ba?w=600&h=450&fit=crop"
-                  alt="landscape 3"
-                />
-                <div class="img-card__tag">no queries</div>
-              </div>
-              <div class="img-card">
-                <img
-                  src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&h=450&fit=crop"
-                  alt="landscape 4"
-                />
-                <div class="img-card__tag">works great</div>
-              </div>
+        <div class="code-block">
+          <div class="code-block__bar">
+            <div class="dots">
+              <span class="d1"></span><span class="d2"></span><span class="d3"></span>
             </div>
+            <span class="code-block__lang">HTML + CSS</span>
+            <button class="copy-btn" onclick="copyCode(this)">Copy</button>
           </div>
-          <div class="code-block">
-            <div class="code-block__bar">
-              <div class="dots">
-                <span class="d1"></span><span class="d2"></span
-                ><span class="d3"></span>
-              </div>
-              <span class="code-block__lang">HTML + CSS</span>
-              <button class="copy-btn" onclick="copyCode(this)">Copy</button>
-            </div>
-            <pre><span class="tag">&lt;div</span> <span class="attr">class</span>=<span class="str">"auto-grid"</span><span class="tag">&gt;</span>
+          <pre><span class="tag">&lt;div</span> <span class="attr">class</span>=<span class="str">"auto-grid"</span><span class="tag">&gt;</span>
   <span class="tag">&lt;div</span> <span class="attr">class</span>=<span class="str">"card"</span><span class="tag">&gt;</span>
     <span class="tag">&lt;img</span> <span class="attr">src</span>=<span class="str">"img1.jpg"</span> <span class="attr">alt</span>=<span class="str">"..."</span><span class="tag">&gt;</span>
   <span class="tag">&lt;/div&gt;</span>
@@ -329,63 +304,52 @@
   <span class="kw">display</span>: <span class="val">block</span>;
   <span class="kw">border-radius</span>: <span class="val">10px</span>;
 }</pre>
-          </div>
         </div>
-        <div class="resize-handle"></div>
       </div>
+      <div class="resize-handle"></div>
+    </div>
 
-      <!-- 5. PICTURE ELEMENT -->
-      <div class="technique">
-        <div class="technique__header">
-          <div class="num">05</div>
-          <div>
-            <h2>Picture Element - Different Image Per Screen</h2>
-            <p>Show one image on mobile, different one on desktop</p>
-          </div>
+    <!-- 5. PICTURE ELEMENT -->
+    <div class="technique">
+      <div class="technique__header">
+        <div class="num">05</div>
+        <div>
+          <h2>Picture Element - Different Image Per Screen</h2>
+          <p>Show one image on mobile, different one on desktop</p>
         </div>
-        <div class="technique__body">
-          <div class="info-bar">
-            <strong>When to use:</strong> Hero banners, marketing images - when
-            mobile needs portrait and desktop needs landscape.
-          </div>
-          <div class="demo">
-            <div class="demo-label">Resize browser to see image change</div>
-            <picture class="ex5-picture">
-              <source
-                media="(min-width: 1024px)"
-                srcset="
+      </div>
+      <div class="technique__body">
+        <div class="info-bar">
+          <strong>When to use:</strong> Hero banners, marketing images - when
+          mobile needs portrait and desktop needs landscape.
+        </div>
+        <div class="demo">
+          <div class="demo-label">Resize browser to see image change</div>
+          <picture class="ex5-picture">
+            <source media="(min-width: 1024px)" srcset="
                   https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=1400&h=500&fit=crop
-                "
-              />
-              <source
-                media="(min-width: 600px)"
-                srcset="
+                " />
+            <source media="(min-width: 600px)" srcset="
                   https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=900&h=500&fit=crop
-                "
-              />
-              <img
-                src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=600&h=800&fit=crop"
-                alt="Responsive picture"
-                loading="lazy"
-                style="
+                " />
+            <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=600&h=800&fit=crop"
+              alt="Responsive picture" loading="lazy" style="
                   width: 100%;
                   height: auto;
                   display: block;
                   border-radius: 10px;
-                "
-              />
-            </picture>
-          </div>
-          <div class="code-block">
-            <div class="code-block__bar">
-              <div class="dots">
-                <span class="d1"></span><span class="d2"></span
-                ><span class="d3"></span>
-              </div>
-              <span class="code-block__lang">HTML</span>
-              <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                " />
+          </picture>
+        </div>
+        <div class="code-block">
+          <div class="code-block__bar">
+            <div class="dots">
+              <span class="d1"></span><span class="d2"></span><span class="d3"></span>
             </div>
-            <pre><span class="tag">&lt;picture&gt;</span>
+            <span class="code-block__lang">HTML</span>
+            <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+          </div>
+          <pre><span class="tag">&lt;picture&gt;</span>
 
   <span class="cmt">&lt;!-- Desktop 1024px and up --&gt;</span>
   <span class="tag">&lt;source</span>
@@ -408,49 +372,44 @@
   <span class="tag">&gt;</span>
 
 <span class="tag">&lt;/picture&gt;</span></pre>
-          </div>
         </div>
-        <div class="resize-handle"></div>
       </div>
+      <div class="resize-handle"></div>
+    </div>
 
-      <!-- 6. HERO IMAGE -->
-      <div class="technique">
-        <div class="technique__header">
-          <div class="num">06</div>
-          <div>
-            <h2>Hero Image - Full Width Banner</h2>
-            <p>Full width image with text overlay on top</p>
+    <!-- 6. HERO IMAGE -->
+    <div class="technique">
+      <div class="technique__header">
+        <div class="num">06</div>
+        <div>
+          <h2>Hero Image - Full Width Banner</h2>
+          <p>Full width image with text overlay on top</p>
+        </div>
+      </div>
+      <div class="technique__body">
+        <div class="info-bar">
+          <strong>When to use:</strong> Landing page banners, section headers.
+        </div>
+        <div class="demo">
+          <div class="demo-label">Live example</div>
+          <div class="hero">
+            <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1800&h=900&fit=crop"
+              alt="Hero background" class="hero-bg" loading="lazy" />
+            <div class="hero__content">
+              <h3>Beautiful Hero Section</h3>
+              <p>Looks great on every screen size</p>
+            </div>
           </div>
         </div>
-        <div class="technique__body">
-          <div class="info-bar">
-            <strong>When to use:</strong> Landing page banners, section headers.
-          </div>
-          <div class="demo">
-            <div class="demo-label">Live example</div>
-            <div class="hero">
-              <img
-                src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1800&h=900&fit=crop"
-                alt="Hero background"
-                class="hero-bg"
-                loading="lazy"
-              />
-              <div class="hero__content">
-                <h3>Beautiful Hero Section</h3>
-                <p>Looks great on every screen size</p>
-              </div>
+        <div class="code-block">
+          <div class="code-block__bar">
+            <div class="dots">
+              <span class="d1"></span><span class="d2"></span><span class="d3"></span>
             </div>
+            <span class="code-block__lang">HTML + CSS</span>
+            <button class="copy-btn" onclick="copyCode(this)">Copy</button>
           </div>
-          <div class="code-block">
-            <div class="code-block__bar">
-              <div class="dots">
-                <span class="d1"></span><span class="d2"></span
-                ><span class="d3"></span>
-              </div>
-              <span class="code-block__lang">HTML + CSS</span>
-              <button class="copy-btn" onclick="copyCode(this)">Copy</button>
-            </div>
-            <pre><span class="tag">&lt;div</span> <span class="attr">class</span>=<span class="str">"hero"</span><span class="tag">&gt;</span>
+          <pre><span class="tag">&lt;div</span> <span class="attr">class</span>=<span class="str">"hero"</span><span class="tag">&gt;</span>
   <span class="tag">&lt;img</span> <span class="attr">src</span>=<span class="str">"hero.jpg"</span> <span class="attr">alt</span>=<span class="str">"hero"</span> <span class="attr">class</span>=<span class="str">"hero-bg"</span><span class="tag">&gt;</span>
   <span class="tag">&lt;div</span> <span class="attr">class</span>=<span class="str">"hero__content"</span><span class="tag">&gt;</span>
     <span class="tag">&lt;h1&gt;</span>Your Title<span class="tag">&lt;/h1&gt;</span>
@@ -483,53 +442,47 @@
   <span class="kw">text-align</span>: <span class="val">center</span>;
   <span class="kw">color</span>: <span class="val">white</span>;
 }</pre>
-          </div>
         </div>
-        <div class="resize-handle"></div>
       </div>
+      <div class="resize-handle"></div>
+    </div>
 
-      <!-- 7. SRCSET -->
-      <div class="technique">
-        <div class="technique__header">
-          <div class="num">07</div>
-          <div>
-            <h2>srcset - Browser Picks The Right Size</h2>
-            <p>Small file on mobile, big file on desktop - automatically</p>
-          </div>
+    <!-- 7. SRCSET -->
+    <div class="technique">
+      <div class="technique__header">
+        <div class="num">07</div>
+        <div>
+          <h2>srcset - Browser Picks The Right Size</h2>
+          <p>Small file on mobile, big file on desktop - automatically</p>
         </div>
-        <div class="technique__body">
-          <div class="info-bar">
-            <strong>When to use:</strong> When you have different sized versions
-            of the same image. Best for performance.
+      </div>
+      <div class="technique__body">
+        <div class="info-bar">
+          <strong>When to use:</strong> When you have different sized versions
+          of the same image. Best for performance.
+        </div>
+        <div class="demo">
+          <div class="demo-label">
+            Browser automatically loads the right size
           </div>
-          <div class="demo">
-            <div class="demo-label">
-              Browser automatically loads the right size
-            </div>
-            <img
-              srcset="
+          <img srcset="
                 https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=400&h=300&fit=crop   400w,
                 https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=800&h=600&fit=crop   800w,
                 https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=1200&h=900&fit=crop 1200w,
                 https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=1600&h=900&fit=crop 1600w
-              "
-              sizes="(max-width: 600px) 100vw, (max-width: 1000px) 50vw, 800px"
-              src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=800&h=600&fit=crop"
-              alt="srcset example"
-              class="ex7-img"
-              loading="lazy"
-            />
-          </div>
-          <div class="code-block">
-            <div class="code-block__bar">
-              <div class="dots">
-                <span class="d1"></span><span class="d2"></span
-                ><span class="d3"></span>
-              </div>
-              <span class="code-block__lang">HTML</span>
-              <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+              " sizes="(max-width: 600px) 100vw, (max-width: 1000px) 50vw, 800px"
+            src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=800&h=600&fit=crop" alt="srcset example"
+            class="ex7-img" loading="lazy" />
+        </div>
+        <div class="code-block">
+          <div class="code-block__bar">
+            <div class="dots">
+              <span class="d1"></span><span class="d2"></span><span class="d3"></span>
             </div>
-            <pre><span class="tag">&lt;img</span>
+            <span class="code-block__lang">HTML</span>
+            <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+          </div>
+          <pre><span class="tag">&lt;img</span>
   <span class="attr">srcset</span>=<span class="str">"
     small.jpg   400w,
     medium.jpg  800w,
@@ -545,52 +498,46 @@
   <span class="attr">alt</span>=<span class="str">"Image description"</span>
   <span class="attr">loading</span>=<span class="str">"lazy"</span>
 <span class="tag">&gt;</span></pre>
-          </div>
         </div>
-        <div class="resize-handle"></div>
       </div>
+      <div class="resize-handle"></div>
+    </div>
 
-      <!-- 8. LAZY LOADING -->
-      <div class="technique">
-        <div class="technique__header">
-          <div class="num">08</div>
-          <div>
-            <h2>Lazy Loading - Load Images When Needed</h2>
-            <p>Image loads only when user scrolls to it - makes page faster</p>
-          </div>
+    <!-- 8. LAZY LOADING -->
+    <div class="technique">
+      <div class="technique__header">
+        <div class="num">08</div>
+        <div>
+          <h2>Lazy Loading - Load Images When Needed</h2>
+          <p>Image loads only when user scrolls to it - makes page faster</p>
         </div>
-        <div class="technique__body">
-          <div class="info-bar">
-            <strong>When to use:</strong> Always use this - put "eager" only on
-            the first image, use "lazy" for everything else.
-          </div>
-          <div class="demo">
-            <div class="demo-label">Blur effect that goes away when loaded</div>
-            <div class="lazy-wrap">
-              <img
-                src="https://images.unsplash.com/photo-1519681393784-d120267933ba?w=1000&h=500&fit=crop"
-                alt="Lazy loaded image"
-                loading="lazy"
-                class="blur-up"
-                style="
+      </div>
+      <div class="technique__body">
+        <div class="info-bar">
+          <strong>When to use:</strong> Always use this - put "eager" only on
+          the first image, use "lazy" for everything else.
+        </div>
+        <div class="demo">
+          <div class="demo-label">Blur effect that goes away when loaded</div>
+          <div class="lazy-wrap">
+            <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?w=1000&h=500&fit=crop"
+              alt="Lazy loaded image" loading="lazy" class="blur-up" style="
                   width: 100%;
                   height: auto;
                   display: block;
                   border-radius: 10px;
-                "
-              />
-            </div>
+                " />
           </div>
-          <div class="code-block">
-            <div class="code-block__bar">
-              <div class="dots">
-                <span class="d1"></span><span class="d2"></span
-                ><span class="d3"></span>
-              </div>
-              <span class="code-block__lang">HTML + CSS</span>
-              <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+        </div>
+        <div class="code-block">
+          <div class="code-block__bar">
+            <div class="dots">
+              <span class="d1"></span><span class="d2"></span><span class="d3"></span>
             </div>
-            <pre><span class="tag">&lt;img</span>
+            <span class="code-block__lang">HTML + CSS</span>
+            <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+          </div>
+          <pre><span class="tag">&lt;img</span>
   <span class="attr">src</span>=<span class="str">"image.jpg"</span>
   <span class="attr">alt</span>=<span class="str">"Image description"</span>
   <span class="attr">loading</span>=<span class="str">"lazy"</span>
@@ -616,46 +563,41 @@ document.querySelectorAll(<span class="str">'.blur-up'</span>).forEach(img => {
     );
   }
 });</pre>
-          </div>
         </div>
-        <div class="resize-handle"></div>
       </div>
+      <div class="resize-handle"></div>
+    </div>
 
-      <!-- 9. SKELETON LOADER -->
-      <div class="technique">
-        <div class="technique__header">
-          <div class="num">09</div>
-          <div>
-            <h2>Skeleton Loader - Loading Animation</h2>
-            <p>Show a shimmer effect while image loads</p>
+    <!-- 9. SKELETON LOADER -->
+    <div class="technique">
+      <div class="technique__header">
+        <div class="num">09</div>
+        <div>
+          <h2>Skeleton Loader - Loading Animation</h2>
+          <p>Show a shimmer effect while image loads</p>
+        </div>
+      </div>
+      <div class="technique__body">
+        <div class="info-bar">
+          <strong>When to use:</strong> Slow internet users - instead of blank
+          box, show a moving shimmer animation.
+        </div>
+        <div class="demo">
+          <div class="demo-label">Watch the shimmer effect</div>
+          <div class="skeleton-wrap" id="skelDemo">
+            <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=1000&h=500&fit=crop"
+              alt="Skeleton demo" loading="lazy" id="skelImg" />
           </div>
         </div>
-        <div class="technique__body">
-          <div class="info-bar">
-            <strong>When to use:</strong> Slow internet users - instead of blank
-            box, show a moving shimmer animation.
-          </div>
-          <div class="demo">
-            <div class="demo-label">Watch the shimmer effect</div>
-            <div class="skeleton-wrap" id="skelDemo">
-              <img
-                src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=1000&h=500&fit=crop"
-                alt="Skeleton demo"
-                loading="lazy"
-                id="skelImg"
-              />
+        <div class="code-block">
+          <div class="code-block__bar">
+            <div class="dots">
+              <span class="d1"></span><span class="d2"></span><span class="d3"></span>
             </div>
+            <span class="code-block__lang">HTML + CSS + JS</span>
+            <button class="copy-btn" onclick="copyCode(this)">Copy</button>
           </div>
-          <div class="code-block">
-            <div class="code-block__bar">
-              <div class="dots">
-                <span class="d1"></span><span class="d2"></span
-                ><span class="d3"></span>
-              </div>
-              <span class="code-block__lang">HTML + CSS + JS</span>
-              <button class="copy-btn" onclick="copyCode(this)">Copy</button>
-            </div>
-            <pre><span class="tag">&lt;div</span> <span class="attr">class</span>=<span class="str">"skeleton-wrap"</span><span class="tag">&gt;</span>
+          <pre><span class="tag">&lt;div</span> <span class="attr">class</span>=<span class="str">"skeleton-wrap"</span><span class="tag">&gt;</span>
   <span class="tag">&lt;img</span> <span class="attr">src</span>=<span class="str">"image.jpg"</span> <span class="attr">alt</span>=<span class="str">"..."</span> <span class="attr">class</span>=<span class="str">"skel-img"</span><span class="tag">&gt;</span>
 <span class="tag">&lt;/div&gt;</span>
 
@@ -679,87 +621,69 @@ document.querySelectorAll(<span class="str">'.blur-up'</span>).forEach(img => {
   <span class="kw">transition</span>: <span class="val">opacity 0.4s</span>;
 }
 <span class="prop">.skel-img.loaded</span> { <span class="kw">opacity</span>: <span class="val">1</span>; }</pre>
-          </div>
         </div>
-        <div class="resize-handle"></div>
       </div>
+      <div class="resize-handle"></div>
+    </div>
 
-      <!-- 10. FILTERS -->
-      <div class="technique">
-        <div class="technique__header">
-          <div class="num">10</div>
-          <div>
-            <h2>CSS Filters - Visual Effects</h2>
-            <p>Grayscale, sepia, blur, brightness - all in CSS</p>
+    <!-- 10. FILTERS -->
+    <div class="technique">
+      <div class="technique__header">
+        <div class="num">10</div>
+        <div>
+          <h2>CSS Filters - Visual Effects</h2>
+          <p>Grayscale, sepia, blur, brightness - all in CSS</p>
+        </div>
+      </div>
+      <div class="technique__body">
+        <div class="info-bar">
+          <strong>When to use:</strong> Hover effects, artistic styling,
+          disabled image states.
+        </div>
+        <div class="demo">
+          <div class="demo-label">Six different filter effects</div>
+          <div class="filter-grid">
+            <div class="filter-item">
+              <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=400&fit=crop"
+                alt="normal" />
+              <div class="filter-label">normal</div>
+            </div>
+            <div class="filter-item">
+              <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=400&fit=crop" alt="gray"
+                class="f-gray" />
+              <div class="filter-label">grayscale</div>
+            </div>
+            <div class="filter-item">
+              <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=400&fit=crop" alt="sepia"
+                class="f-sepia" />
+              <div class="filter-label">sepia</div>
+            </div>
+            <div class="filter-item">
+              <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=400&fit=crop" alt="bright"
+                class="f-bright" />
+              <div class="filter-label">brightness</div>
+            </div>
+            <div class="filter-item">
+              <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=400&fit=crop" alt="blur"
+                class="f-blur" />
+              <div class="filter-label">blur</div>
+            </div>
+            <div class="filter-item">
+              <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=400&fit=crop"
+                alt="contrast" class="f-contrast" />
+              <div class="filter-label">contrast+hue</div>
+            </div>
           </div>
         </div>
-        <div class="technique__body">
-          <div class="info-bar">
-            <strong>When to use:</strong> Hover effects, artistic styling,
-            disabled image states.
-          </div>
-          <div class="demo">
-            <div class="demo-label">Six different filter effects</div>
-            <div class="filter-grid">
-              <div class="filter-item">
-                <img
-                  src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=400&fit=crop"
-                  alt="normal"
-                />
-                <div class="filter-label">normal</div>
-              </div>
-              <div class="filter-item">
-                <img
-                  src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=400&fit=crop"
-                  alt="gray"
-                  class="f-gray"
-                />
-                <div class="filter-label">grayscale</div>
-              </div>
-              <div class="filter-item">
-                <img
-                  src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=400&fit=crop"
-                  alt="sepia"
-                  class="f-sepia"
-                />
-                <div class="filter-label">sepia</div>
-              </div>
-              <div class="filter-item">
-                <img
-                  src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=400&fit=crop"
-                  alt="bright"
-                  class="f-bright"
-                />
-                <div class="filter-label">brightness</div>
-              </div>
-              <div class="filter-item">
-                <img
-                  src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=400&fit=crop"
-                  alt="blur"
-                  class="f-blur"
-                />
-                <div class="filter-label">blur</div>
-              </div>
-              <div class="filter-item">
-                <img
-                  src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=400&fit=crop"
-                  alt="contrast"
-                  class="f-contrast"
-                />
-                <div class="filter-label">contrast+hue</div>
-              </div>
+        <div class="code-block">
+          <div class="code-block__bar">
+            <div class="dots">
+              <span class="d1"></span><span class="d2"></span><span class="d3"></span>
             </div>
+            <span class="code-block__lang">CSS</span>
+            <button class="copy-btn" onclick="copyCode(this)">Copy</button>
           </div>
-          <div class="code-block">
-            <div class="code-block__bar">
-              <div class="dots">
-                <span class="d1"></span><span class="d2"></span
-                ><span class="d3"></span>
-              </div>
-              <span class="code-block__lang">CSS</span>
-              <button class="copy-btn" onclick="copyCode(this)">Copy</button>
-            </div>
-            <pre><span class="cmt">/* All filters - copy what you need */</span>
+          <pre><span class="cmt">/* All filters - copy what you need */</span>
 
 <span class="prop">.f-grayscale</span>   { <span class="kw">filter</span>: <span class="val">grayscale(100%)</span>; }
 <span class="prop">.f-sepia</span>       { <span class="kw">filter</span>: <span class="val">sepia(80%)</span>; }
@@ -781,88 +705,69 @@ document.querySelectorAll(<span class="str">'.blur-up'</span>).forEach(img => {
   <span class="kw">transition</span>: <span class="val">filter 0.4s ease</span>;
 }
 <span class="prop">.f-gray-hover:hover</span> { <span class="kw">filter</span>: <span class="val">grayscale(0%)</span>; }</pre>
-          </div>
         </div>
-        <div class="resize-handle"></div>
       </div>
+      <div class="resize-handle"></div>
+    </div>
 
-      <!-- 11. CLIP PATH -->
-      <div class="technique">
-        <div class="technique__header">
-          <div class="num">11</div>
-          <div>
-            <h2>Clip-Path - Custom Shapes</h2>
-            <p>Circle, hexagon, diamond, star - any shape you want</p>
+    <!-- 11. CLIP PATH -->
+    <div class="technique">
+      <div class="technique__header">
+        <div class="num">11</div>
+        <div>
+          <h2>Clip-Path - Custom Shapes</h2>
+          <p>Circle, hexagon, diamond, star - any shape you want</p>
+        </div>
+      </div>
+      <div class="technique__body">
+        <div class="info-bar">
+          <strong>When to use:</strong> Team photos, avatars, creative cards,
+          landing pages.
+        </div>
+        <div class="demo">
+          <div class="demo-label">Six different shapes</div>
+          <div class="clip-grid">
+            <div class="clip-item">
+              <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=300&h=300&fit=crop" alt="circle"
+                class="c-circle" />
+              <div class="clip-label">circle</div>
+            </div>
+            <div class="clip-item">
+              <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?w=300&h=300&fit=crop" alt="hex"
+                class="c-hex" />
+              <div class="clip-label">hexagon</div>
+            </div>
+            <div class="clip-item">
+              <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=300&h=300&fit=crop" alt="diag"
+                class="c-diag" />
+              <div class="clip-label">diagonal</div>
+            </div>
+            <div class="clip-item">
+              <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=300&h=300&fit=crop" alt="diamond"
+                class="c-diamond" />
+              <div class="clip-label">diamond</div>
+            </div>
+            <div class="clip-item">
+              <img src="https://images.unsplash.com/photo-1682687220742-aba13b6e50ba?w=300&h=300&fit=crop" alt="star"
+                class="c-star" />
+              <div class="clip-label">star</div>
+            </div>
+            <div class="clip-item">
+              <img src="https://images.unsplash.com/photo-1682687220063-4742bd7fd538?w=300&h=300&fit=crop" alt="arrow"
+                class="c-arrow" />
+              <div class="clip-label">arrow</div>
+            </div>
           </div>
         </div>
-        <div class="technique__body">
-          <div class="info-bar">
-            <strong>When to use:</strong> Team photos, avatars, creative cards,
-            landing pages.
-          </div>
-          <div class="demo">
-            <div class="demo-label">Six different shapes</div>
-            <div class="clip-grid">
-              <div class="clip-item">
-                <img
-                  src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=300&h=300&fit=crop"
-                  alt="circle"
-                  class="c-circle"
-                />
-                <div class="clip-label">circle</div>
-              </div>
-              <div class="clip-item">
-                <img
-                  src="https://images.unsplash.com/photo-1519681393784-d120267933ba?w=300&h=300&fit=crop"
-                  alt="hex"
-                  class="c-hex"
-                />
-                <div class="clip-label">hexagon</div>
-              </div>
-              <div class="clip-item">
-                <img
-                  src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=300&h=300&fit=crop"
-                  alt="diag"
-                  class="c-diag"
-                />
-                <div class="clip-label">diagonal</div>
-              </div>
-              <div class="clip-item">
-                <img
-                  src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=300&h=300&fit=crop"
-                  alt="diamond"
-                  class="c-diamond"
-                />
-                <div class="clip-label">diamond</div>
-              </div>
-              <div class="clip-item">
-                <img
-                  src="https://images.unsplash.com/photo-1682687220742-aba13b6e50ba?w=300&h=300&fit=crop"
-                  alt="star"
-                  class="c-star"
-                />
-                <div class="clip-label">star</div>
-              </div>
-              <div class="clip-item">
-                <img
-                  src="https://images.unsplash.com/photo-1682687220063-4742bd7fd538?w=300&h=300&fit=crop"
-                  alt="arrow"
-                  class="c-arrow"
-                />
-                <div class="clip-label">arrow</div>
-              </div>
+        <div class="code-block">
+          <div class="code-block__bar">
+            <div class="dots">
+              <span class="d1"></span><span class="d2"></span><span class="d3"></span>
             </div>
+            <span class="code-block__lang">CSS</span>
+            <button class="copy-btn" onclick="copyCode(this)">Copy</button>
           </div>
-          <div class="code-block">
-            <div class="code-block__bar">
-              <div class="dots">
-                <span class="d1"></span><span class="d2"></span
-                ><span class="d3"></span>
-              </div>
-              <span class="code-block__lang">CSS</span>
-              <button class="copy-btn" onclick="copyCode(this)">Copy</button>
-            </div>
-            <pre><span class="cmt">/* Clip-path shapes - copy what you like */</span>
+          <pre><span class="cmt">/* Clip-path shapes - copy what you like */</span>
 
 <span class="prop">.clip-circle</span> {
   <span class="kw">clip-path</span>: <span class="val">circle(50%)</span>;
@@ -881,64 +786,58 @@ document.querySelectorAll(<span class="str">'.blur-up'</span>).forEach(img => {
   <span class="kw">object-fit</span>: <span class="val">cover</span>;
   <span class="kw">display</span>: <span class="val">block</span>;
 }</pre>
-          </div>
         </div>
-        <div class="resize-handle"></div>
       </div>
+      <div class="resize-handle"></div>
+    </div>
 
-      <!-- 12. HOVER EFFECTS -->
-      <div class="technique">
-        <div class="technique__header">
-          <div class="num">12</div>
-          <div>
-            <h2>Hover Effects - Interactive Images</h2>
-            <p>Zoom, overlay, grayscale to color - popular hover effects</p>
+    <!-- 12. HOVER EFFECTS -->
+    <div class="technique">
+      <div class="technique__header">
+        <div class="num">12</div>
+        <div>
+          <h2>Hover Effects - Interactive Images</h2>
+          <p>Zoom, overlay, grayscale to color - popular hover effects</p>
+        </div>
+      </div>
+      <div class="technique__body">
+        <div class="info-bar">
+          <strong>When to use:</strong> Portfolios, galleries, product cards -
+          hover on images to engage users.
+        </div>
+        <div class="demo">
+          <div class="demo-label">Hover over each card</div>
+          <div class="hover-grid">
+            <div class="hov hov--zoom">
+              <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=500&h=375&fit=crop" alt="zoom" />
+              <div class="hov__overlay">
+                <span>Zoom Effect</span>
+              </div>
+            </div>
+            <div class="hov hov--gray">
+              <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=500&h=375&fit=crop" alt="gray" />
+              <div class="hov__overlay">
+                <span>Zoom Effect</span>
+              </div>
+            </div>
+            <div class="hov hov--slide">
+              <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=500&h=375&fit=crop"
+                alt="slide" />
+              <div class="hov__overlay">
+                <span>Slide Up Overlay</span>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="technique__body">
-          <div class="info-bar">
-            <strong>When to use:</strong> Portfolios, galleries, product cards -
-            hover on images to engage users.
-          </div>
-          <div class="demo">
-            <div class="demo-label">Hover over each card</div>
-            <div class="hover-grid">
-              <div class="hov hov--zoom">
-                <img
-                  src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=500&h=375&fit=crop"
-                  alt="zoom"
-                />
-                <div class="hov__overlay">
-                  <span>Zoom Effect</span>
-                </div>
-              </div>
-              <div class="hov hov--gray">
-                <img
-                  src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=500&h=375&fit=crop"
-                  alt="gray"
-                />
-              </div>
-              <div class="hov hov--slide">
-                <img
-                  src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=500&h=375&fit=crop"
-                  alt="slide"
-                />
-                <div class="hov__overlay">
-                  <span>Slide Up Overlay</span>
-                </div>
-              </div>
+        <div class="code-block">
+          <div class="code-block__bar">
+            <div class="dots">
+              <span class="d1"></span><span class="d2"></span><span class="d3"></span>
             </div>
+            <span class="code-block__lang">CSS</span>
+            <button class="copy-btn" onclick="copyCode(this)">Copy</button>
           </div>
-          <div class="code-block">
-            <div class="code-block__bar">
-              <div class="dots">
-                <span class="d1"></span><span class="d2"></span
-                ><span class="d3"></span>
-              </div>
-              <span class="code-block__lang">CSS</span>
-              <button class="copy-btn" onclick="copyCode(this)">Copy</button>
-            </div>
-            <pre><span class="cmt">/* Image hover wrapper */</span>
+          <pre><span class="cmt">/* Image hover wrapper */</span>
 <span class="prop">.image-hover</span> {
   <span class="kw">border-radius</span>: <span class="val">10px</span>;
   <span class="kw">overflow</span>: <span class="val">hidden</span>;
@@ -962,45 +861,44 @@ document.querySelectorAll(<span class="str">'.blur-up'</span>).forEach(img => {
 <span class="prop">.gray-color:hover img</span> {
   <span class="kw">filter</span>: <span class="val">grayscale(0%)</span>;
 }</pre>
-          </div>
         </div>
-        <div class="resize-handle"></div>
       </div>
+      <div class="resize-handle"></div>
+    </div>
 
-      <!-- 13. BACKGROUND IMAGE -->
-      <div class="technique">
-        <div class="technique__header">
-          <div class="num">13</div>
-          <div>
-            <h2>CSS Background Image</h2>
-            <p>Use CSS to set background image - automatically responsive</p>
+    <!-- 13. BACKGROUND IMAGE -->
+    <div class="technique">
+      <div class="technique__header">
+        <div class="num">13</div>
+        <div>
+          <h2>CSS Background Image</h2>
+          <p>Use CSS to set background image - automatically responsive</p>
+        </div>
+      </div>
+      <div class="technique__body">
+        <div class="info-bar">
+          <strong>When to use:</strong> Section backgrounds, decorative
+          images. Note: Screen readers cannot see background images - use only
+          for decoration.
+        </div>
+        <div class="demo">
+          <div class="demo-label">Live example</div>
+          <div class="bg-demo">
+            <div class="bg-demo-content">
+              <h3>CSS Background Image</h3>
+              <p>background-size: cover makes it automatically responsive</p>
+            </div>
           </div>
         </div>
-        <div class="technique__body">
-          <div class="info-bar">
-            <strong>When to use:</strong> Section backgrounds, decorative
-            images. Note: Screen readers cannot see background images - use only
-            for decoration.
-          </div>
-          <div class="demo">
-            <div class="demo-label">Live example</div>
-            <div class="bg-demo">
-              <div class="bg-demo-content">
-                <h3>CSS Background Image</h3>
-                <p>background-size: cover makes it automatically responsive</p>
-              </div>
+        <div class="code-block">
+          <div class="code-block__bar">
+            <div class="dots">
+              <span class="d1"></span><span class="d2"></span><span class="d3"></span>
             </div>
+            <span class="code-block__lang">HTML + CSS</span>
+            <button class="copy-btn" onclick="copyCode(this)">Copy</button>
           </div>
-          <div class="code-block">
-            <div class="code-block__bar">
-              <div class="dots">
-                <span class="d1"></span><span class="d2"></span
-                ><span class="d3"></span>
-              </div>
-              <span class="code-block__lang">HTML + CSS</span>
-              <button class="copy-btn" onclick="copyCode(this)">Copy</button>
-            </div>
-            <pre><span class="tag">&lt;div</span> <span class="attr">class</span>=<span class="str">"bg-section"</span><span class="tag">&gt;</span>
+          <pre><span class="tag">&lt;div</span> <span class="attr">class</span>=<span class="str">"bg-section"</span><span class="tag">&gt;</span>
   <span class="cmt">&lt;!-- content here --&gt;</span>
 <span class="tag">&lt;/div&gt;</span>
 
@@ -1019,84 +917,65 @@ document.querySelectorAll(<span class="str">'.blur-up'</span>).forEach(img => {
 <span class="prop">.bg-dark</span> {
   <span class="kw">background-image</span>: <span class="val">linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('image.jpg')</span>;
 }</pre>
-          </div>
         </div>
-        <div class="resize-handle"></div>
       </div>
+      <div class="resize-handle"></div>
+    </div>
 
-      <!-- 14. MASONRY -->
-      <div class="technique">
-        <div class="technique__header">
-          <div class="num">14</div>
-          <div>
-            <h2>Masonry Layout - Pinterest Style</h2>
-            <p>Different height images together - CSS columns do it</p>
+    <!-- 14. MASONRY -->
+    <div class="technique">
+      <div class="technique__header">
+        <div class="num">14</div>
+        <div>
+          <h2>Masonry Layout - Pinterest Style</h2>
+          <p>Different height images together - CSS columns do it</p>
+        </div>
+      </div>
+      <div class="technique__body">
+        <div class="info-bar">
+          <strong>When to use:</strong> Photo galleries, blog thumbnails -
+          when images have different sizes.
+        </div>
+        <div class="demo">
+          <div class="demo-label">
+            3 column masonry - resize browser to see it change
+          </div>
+          <div class="masonry">
+            <div class="masonry-item">
+              <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=400&h=300&fit=crop" alt="1"
+                loading="lazy" />
+            </div>
+            <div class="masonry-item">
+              <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?w=400&h=550&fit=crop" alt="2"
+                loading="lazy" />
+            </div>
+            <div class="masonry-item">
+              <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=400&h=280&fit=crop" alt="3"
+                loading="lazy" />
+            </div>
+            <div class="masonry-item">
+              <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=480&fit=crop" alt="4"
+                loading="lazy" />
+            </div>
+            <div class="masonry-item">
+              <img src="https://images.unsplash.com/photo-1682687220742-aba13b6e50ba?w=400&h=320&fit=crop" alt="5"
+                loading="lazy" />
+            </div>
+            <div class="masonry-item">
+              <img src="https://images.unsplash.com/photo-1682687220063-4742bd7fd538?w=400&h=420&fit=crop" alt="6"
+                loading="lazy" />
+            </div>
           </div>
         </div>
-        <div class="technique__body">
-          <div class="info-bar">
-            <strong>When to use:</strong> Photo galleries, blog thumbnails -
-            when images have different sizes.
+        <div class="code-block">
+          <div class="code-block__bar">
+            <div class="dots">
+              <span class="d1"></span><span class="d2"></span><span class="d3"></span>
+            </div>
+            <span class="code-block__lang">HTML + CSS</span>
+            <button class="copy-btn" onclick="copyCode(this)">Copy</button>
           </div>
-          <div class="demo">
-            <div class="demo-label">
-              3 column masonry - resize browser to see it change
-            </div>
-            <div class="masonry">
-              <div class="masonry-item">
-                <img
-                  src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=400&h=300&fit=crop"
-                  alt="1"
-                  loading="lazy"
-                />
-              </div>
-              <div class="masonry-item">
-                <img
-                  src="https://images.unsplash.com/photo-1519681393784-d120267933ba?w=400&h=550&fit=crop"
-                  alt="2"
-                  loading="lazy"
-                />
-              </div>
-              <div class="masonry-item">
-                <img
-                  src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=400&h=280&fit=crop"
-                  alt="3"
-                  loading="lazy"
-                />
-              </div>
-              <div class="masonry-item">
-                <img
-                  src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=480&fit=crop"
-                  alt="4"
-                  loading="lazy"
-                />
-              </div>
-              <div class="masonry-item">
-                <img
-                  src="https://images.unsplash.com/photo-1682687220742-aba13b6e50ba?w=400&h=320&fit=crop"
-                  alt="5"
-                  loading="lazy"
-                />
-              </div>
-              <div class="masonry-item">
-                <img
-                  src="https://images.unsplash.com/photo-1682687220063-4742bd7fd538?w=400&h=420&fit=crop"
-                  alt="6"
-                  loading="lazy"
-                />
-              </div>
-            </div>
-          </div>
-          <div class="code-block">
-            <div class="code-block__bar">
-              <div class="dots">
-                <span class="d1"></span><span class="d2"></span
-                ><span class="d3"></span>
-              </div>
-              <span class="code-block__lang">HTML + CSS</span>
-              <button class="copy-btn" onclick="copyCode(this)">Copy</button>
-            </div>
-            <pre><span class="tag">&lt;div</span> <span class="attr">class</span>=<span class="str">"masonry"</span><span class="tag">&gt;</span>
+          <pre><span class="tag">&lt;div</span> <span class="attr">class</span>=<span class="str">"masonry"</span><span class="tag">&gt;</span>
   <span class="tag">&lt;div</span> <span class="attr">class</span>=<span class="str">"item"</span><span class="tag">&gt;</span>
     <span class="tag">&lt;img</span> <span class="attr">src</span>=<span class="str">"img.jpg"</span> <span class="attr">alt</span>=<span class="str">"..."</span> <span class="attr">loading</span>=<span class="str">"lazy"</span><span class="tag">&gt;</span>
   <span class="tag">&lt;/div&gt;</span>
@@ -1125,35 +1004,34 @@ document.querySelectorAll(<span class="str">'.blur-up'</span>).forEach(img => {
   <span class="kw">height</span>: <span class="val">auto</span>;
   <span class="kw">display</span>: <span class="val">block</span>;
 }</pre>
-          </div>
         </div>
-        <div class="resize-handle"></div>
       </div>
+      <div class="resize-handle"></div>
+    </div>
 
-      <!-- 15. ACCESSIBILITY -->
-      <div class="technique">
-        <div class="technique__header">
-          <div class="num">15</div>
-          <div>
-            <h2>Accessibility - For All Users</h2>
-            <p>Alt text, keyboard focus, reduced motion - do this always</p>
-          </div>
+    <!-- 15. ACCESSIBILITY -->
+    <div class="technique">
+      <div class="technique__header">
+        <div class="num">15</div>
+        <div>
+          <h2>Accessibility - For All Users</h2>
+          <p>Alt text, keyboard focus, reduced motion - do this always</p>
         </div>
-        <div class="technique__body">
-          <div class="info-bar">
-            <strong>When to use:</strong> Always - this is not just rules, real
-            people depend on this.
-          </div>
-          <div class="code-block">
-            <div class="code-block__bar">
-              <div class="dots">
-                <span class="d1"></span><span class="d2"></span
-                ><span class="d3"></span>
-              </div>
-              <span class="code-block__lang">HTML + CSS</span>
-              <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+      </div>
+      <div class="technique__body">
+        <div class="info-bar">
+          <strong>When to use:</strong> Always - this is not just rules, real
+          people depend on this.
+        </div>
+        <div class="code-block">
+          <div class="code-block__bar">
+            <div class="dots">
+              <span class="d1"></span><span class="d2"></span><span class="d3"></span>
             </div>
-            <pre><span class="cmt">&lt;!-- 1. Important image - write good alt text --&gt;</span>
+            <span class="code-block__lang">HTML + CSS</span>
+            <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+          </div>
+          <pre><span class="cmt">&lt;!-- 1. Important image - write good alt text --&gt;</span>
 <span class="tag">&lt;img</span> <span class="attr">src</span>=<span class="str">"product.jpg"</span> <span class="attr">alt</span>=<span class="str">"Blue leather bag"</span><span class="tag">&gt;</span>
 
 <span class="cmt">&lt;!-- 2. Decoration only - leave alt empty --&gt;</span>
@@ -1187,62 +1065,70 @@ document.querySelectorAll(<span class="str">'.blur-up'</span>).forEach(img => {
     <span class="kw">page-break-inside</span>: <span class="val">avoid</span>;
   }
 }</pre>
-          </div>
         </div>
-        <div class="resize-handle"></div>
       </div>
+      <div class="resize-handle"></div>
     </div>
+  </div>
+  <footer class="footer">
+    <div class="footer__inner">
+      <p>Designed & built by <span>M Haris</span></p>
+      <p>WhatsApp: <span>+92304-8994097</span> · Peshawar, PK</p>
+      <p>© 2026 · All rights reserved</p>
+    </div>
+  </footer>
 
-    <script>
-      // Fetch GitHub followers
-      async function fetchGitHubFollowers() {
-        try {
-          const response = await fetch(
-            'https://api.github.com/users/harisdevify'
-          );
-          const data = await response.json();
-          const followers = data.followers;
-          document.getElementById('github-count').textContent =
-            followers.toLocaleString();
-        } catch (error) {
-          console.log('Could not fetch GitHub followers');
-          document.getElementById('github-count').textContent = '💻';
-        }
+  <script>
+    // Fetch GitHub followers
+    async function fetchGitHubFollowers() {
+      try {
+        const response = await fetch(
+          'https://api.github.com/users/harisdevify'
+        );
+        const data = await response.json();
+        const followers = data.followers;
+        document.getElementById('github-count').textContent =
+          followers.toLocaleString();
+      } catch (error) {
+        console.log('Could not fetch GitHub followers');
+        document.getElementById('github-count').textContent = '💻';
       }
+    }
 
-      // Copy button functionality
-      function copyCode(btn) {
-        const pre = btn.closest('.code-block').querySelector('pre');
-        const text = pre.innerText;
-        navigator.clipboard.writeText(text).then(() => {
-          btn.textContent = 'Copied!';
-          btn.classList.add('copied');
-          setTimeout(() => {
-            btn.textContent = 'Copy';
-            btn.classList.remove('copied');
-          }, 2000);
-        });
-      }
-
-      // Blur-up lazy loading
-      document.querySelectorAll('.blur-up').forEach((img) => {
-        const done = () => img.classList.add('loaded');
-        img.complete ? done() : img.addEventListener('load', done);
+    // Copy button functionality
+    function copyCode(btn) {
+      const pre = btn.closest('.code-block').querySelector('pre');
+      const text = pre.innerText;
+      navigator.clipboard.writeText(text).then(() => {
+        btn.textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.textContent = 'Copy';
+          btn.classList.remove('copied');
+        }, 2000);
       });
+    }
 
-      // Skeleton loader
-      const skelImg = document.getElementById('skelImg');
-      const skelWrap = document.getElementById('skelDemo');
-      if (skelImg && skelWrap) {
-        const done = () => {
-          skelImg.classList.add('loaded');
-          skelWrap.classList.add('done');
-        };
-        skelImg.complete ? done() : skelImg.addEventListener('load', done);
-      }
+    // Blur-up lazy loading
+    document.querySelectorAll('.blur-up').forEach((img) => {
+      const done = () => img.classList.add('loaded');
+      img.complete ? done() : img.addEventListener('load', done);
+    });
 
-      // Fetch followers on load
-      fetchGitHubFollowers();
-    </script>
-  </body>
+    // Skeleton loader
+    const skelImg = document.getElementById('skelImg');
+    const skelWrap = document.getElementById('skelDemo');
+    if (skelImg && skelWrap) {
+      const done = () => {
+        skelImg.classList.add('loaded');
+        skelWrap.classList.add('done');
+      };
+      skelImg.complete ? done() : skelImg.addEventListener('load', done);
+    }
+
+    // Fetch followers on load
+    fetchGitHubFollowers();
+  </script>
+</body>
+
 </html>

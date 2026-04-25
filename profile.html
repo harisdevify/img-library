@@ -1,58 +1,177 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="index.css" />
-  </head>
-  <body>
-    <!-- PROFILE HEADER -->
-    <section class="profile-header">
-      <div class="profile-container">
-        <div class="profile-left">
-          <img
-            src="https://avatars.githubusercontent.com/u/210314776?v=4"
-            alt="Profile picture"
-            class="profile-pic"
-          />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes" />
+  <title>M Haris • Full Stack Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Sora:wght@300;400;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="profile.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__inner">
+      <a href="#" class="header__brand">
+        <img src="/profile.png" alt="M Haris" class="header__avatar" />
+        <span class="header__name">M Haris</span>
+      </a>
+      <nav class="header__nav">
+        <!-- <a href="#stack">Stack</a> -->
+        <a href="/index.html">Images Library</a>
+        <a href="https://github.com/harisdevify" target="_blank">GitHub ↗</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page">
+    <section class="hero">
+      <div class="hero__left">
+        <p class="hero__eyebrow fade-up d1">Available for projects</p>
+        <h1 class="hero__title fade-up d2">
+          Full Stack<br /><em>Developer</em><br />& Soft Engineer
+        </h1>
+        <p class="hero__bio fade-up d3">
+          Building scalable web applications with modern technologies.
+        </p>
+        <div class="hero__cta fade-up d4">
+          <a href="https://wa.me/923048994097" target="_blank" class="btn btn--primary">
+            WhatsApp Me
+          </a>
+          <a href="https://github.com/harisdevify" target="_blank" class="btn btn--ghost">
+            View GitHub →
+          </a>
         </div>
+      </div>
 
-        <div class="profile-right">
-          <h1>M Haris</h1>
-          <p class="role">Full Stack Web Application Developer</p>
-
-          <span class="badge">Contact on whatsapp: 03048994097</span>
-
-          <div class="social-links">
-            <a
-              href="https://github.com/harisdevify"
-              class="social-link"
-              target="_blank"
-            >
-              GitHub
-              <span class="follower-count">Profile</span>
-            </a>
-
-            <a
-              href="https://www.linkedin.com/in/hariswebdev/"
-              class="social-link"
-              target="_blank"
-            >
-              LinkedIn
-              <span class="follower-count">Profile</span>
-            </a>
-            <a
-              href="https://www.youtube.com/@programming360-f5s"
-              class="social-link"
-              target="_blank"
-            >
-              Youtube
-              <span class="follower-count">Channel</span>
-            </a>
+      <div class="hero__avatar-wrap fade-up d3">
+        <div class="avatar-ring">
+          <img src="./profile.png" alt="M Haris" />
+        </div>
+        <div class="hero__stats">
+          <div class="stat-chip">
+            <div class="stat-chip__val">2+</div>
+            <div class="stat-chip__label">Yrs Exp</div>
+          </div>
+          <div class="stat-chip">
+            <div class="stat-chip__val">20+</div>
+            <div class="stat-chip__label">Projects</div>
+          </div>
+          <div class="stat-chip">
+            <div class="stat-chip__val">10+</div>
+            <div class="stat-chip__label">Clients</div>
           </div>
         </div>
       </div>
     </section>
-  </body>
+
+    <div class="socials fade-up d5">
+      <a href="https://github.com/harisdevify" target="_blank" class="soc-link">
+        <span class="soc-icon">⌥</span> GitHub
+      </a>
+      <a href="https://www.linkedin.com/in/hariswebdev/" target="_blank" class="soc-link">
+        <span class="soc-icon">◈</span> LinkedIn
+      </a>
+      <a href="https://www.youtube.com/@programming360-f5s" target="_blank" class="soc-link">
+        <span class="soc-icon">▶</span> YouTube
+      </a>
+      <a href="https://www.tiktok.com/@yourhandle" target="_blank" class="soc-link">
+        <span class="soc-icon">◎</span> TikTok
+      </a>
+    </div>
+
+    <div class="divider"></div>
+
+    <section id="stack" class="stack-section fade-up d5">
+      <p class="section-label">Technology Stack</p>
+      <div class="stack-grid">
+        <div class="stack-card">
+          <div class="stack-card__head">
+            <div class="stack-card__ico ico--fe">🎨</div>
+            <div>
+              <h3>Frontend</h3>
+              <p class="stack-card__sub">UI & Experience</p>
+            </div>
+          </div>
+          <div class="tech-pills">
+            <span class="tech-pill"><span class="dot"></span>HTML5</span>
+            <span class="tech-pill"><span class="dot"></span>CSS3</span>
+            <span class="tech-pill"><span class="dot"></span>Tailwind</span>
+            <span class="tech-pill"><span class="dot"></span>JavaScript</span>
+            <span class="tech-pill"><span class="dot"></span>React.js</span>
+            <span class="tech-pill"><span class="dot"></span>Next.js</span>
+          </div>
+        </div>
+
+        <div class="stack-card">
+          <div class="stack-card__head">
+            <div class="stack-card__ico ico--be">⚙️</div>
+            <div>
+              <h3>Backend</h3>
+              <p class="stack-card__sub">Servers & APIs</p>
+            </div>
+          </div>
+          <div class="tech-pills">
+            <span class="tech-pill"><span class="dot"></span>Node.js</span>
+            <span class="tech-pill"><span class="dot"></span>Express.js</span>
+            <span class="tech-pill"><span class="dot"></span>NestJS</span>
+            <span class="tech-pill"><span class="dot"></span>REST APIs</span>
+            <span class="tech-pill"><span class="dot"></span>PostgreSQL</span>
+          </div>
+        </div>
+
+        <div class="stack-card">
+          <div class="stack-card__head">
+            <div class="stack-card__ico ico--lg">🧠</div>
+            <div>
+              <h3>Core Logic</h3>
+              <p class="stack-card__sub">Algorithms & Data</p>
+            </div>
+          </div>
+          <div class="tech-pills">
+            <span class="tech-pill"><span class="dot"></span>Java</span>
+            <span class="tech-pill"><span class="dot"></span>C++</span>
+            <span class="tech-pill"><span class="dot"></span>Python</span>
+            <span class="tech-pill"><span class="dot"></span>DSA</span>
+            <span class="tech-pill"><span class="dot"></span>Git</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <p>Designed & built by <span>M Haris</span></p>
+      <p>WhatsApp: <span>+92304-8994097</span> · Peshawar, PK</p>
+      <p>© 2026 · All rights reserved</p>
+    </div>
+  </footer>
+
+  <script>
+    const obs = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((e) => {
+          if (e.isIntersecting) {
+            e.target.style.opacity = '1';
+            e.target.style.transform = 'translateY(0)';
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+
+    document.querySelectorAll('.stack-card').forEach((el, i) => {
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(20px)';
+      el.style.transition = `opacity 0.6s ease ${i * 0.1}s, transform 0.6s ease ${i * 0.1}s`;
+      obs.observe(el);
+    });
+  </script>
+</body>
+
 </html>
