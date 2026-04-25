@@ -411,7 +411,7 @@ body::before {
 .stack-card {
   background: var(--surface);
   border: 1px solid var(--border);
-  border-radius: 16px;
+  border-radius: 5px;
   padding: 1.75rem;
   backdrop-filter: blur(20px);
   transition: all 0.3s ease;

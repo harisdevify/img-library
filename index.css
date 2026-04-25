@@ -22,6 +22,8 @@
   --mono: 'Geist Mono', monospace;
   --display: 'Clash Display', sans-serif;
   --sans: 'Cabinet Grotesk', sans-serif;
+  --rad: 5px;
+  --rad-lg: 5px;
 }
 
 html {
@@ -69,7 +71,7 @@ body {
   position: sticky;
   top: 0;
   z-index: 100;
-  padding: 0 1.5rem;
+  padding: if(media(width < 768px): 5px; else: 0rem);
   border-bottom: 1px solid var(--border);
   background: rgba(4, 7, 15, 0.75);
   backdrop-filter: blur(20px);
@@ -96,8 +98,7 @@ body {
 .header__avatar {
   width: 34px;
   height: 34px;
-  border-radius: 50%;
-  border: 1.5px solid var(--accent);
+  border-radius: 10%;
   object-fit: cover;
 }
 
