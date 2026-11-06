@@ -2,175 +2,154 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes" />
-  <title>M Haris • Full Stack Developer</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>M Haris • Full Stack Engineer</title>
+  <meta name="description"
+    content="M Haris, full stack engineer at Devify Solutions, Peshawar. Dashboards, SaaS and web apps with React, Next.js, NestJS and PostgreSQL.">
+  <meta property="og:title" content="M Haris • Full Stack Engineer">
+  <meta property="og:image" content="profile.png">
+  <meta name="theme-color" content="#0B0F19">
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⌨️</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Sora:wght@300;400;600;700&display=swap"
-    rel="stylesheet" />
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Space+Grotesk:wght@400;500;700&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="profile.css">
 </head>
 
 <body>
-  <header class="header">
-    <div class="header__inner">
-      <a href="#" class="header__brand">
-        <img src="./profile.png" alt="M Haris" class="header__avatar" />
-        <span class="header__name">M Haris</span>
-      </a>
-      <nav class="header__nav">
-        <!-- <a href="#stack">Stack</a> -->
-        <a href="https://harisdevify.github.io/img-library">Images Library</a>
-      </nav>
-    </div>
+  <div id="cur" aria-hidden="true"></div>
+  <header class="nav glass"><a href="#top" class="logo">MH<i>.</i></a>
+    <nav id="dr"><a href="#about">About</a><a href="#work">Work</a><a href="#github">GitHub</a><a
+        href="#contact">Contact</a><a href="https://harisdevify.github.io/img-library">Images Library</a></nav>
+    <a href="#contact" class="btn mag nav__cta">Let's talk</a>
+    <button id="bg" aria-label="Menu" aria-expanded="false" aria-controls="dr"><span></span><span></span></button>
   </header>
 
-  <main class="page">
+  <main id="top">
     <section class="hero">
-      <div class="hero__left">
-        <p class="hero__eyebrow fade-up d1">Available for projects</p>
-        <h1 class="hero__title fade-up d2">
-          Full Stack<br /><em>Developer</em><br />& Soft Engineer
-        </h1>
-        <p class="hero__bio fade-up d3">
-          Building scalable web applications with modern technologies.
-        </p>
-        <div class="hero__cta fade-up d4">
-          <a href="https://wa.me/923048994097" target="_blank" class="btn btn--primary ">
-            WhatsApp Me
-          </a>
-          <a href="https://github.com/harisdevify" target="_blank" class="btn btn--ghost ">
-            View GitHub →
-          </a>
-        </div>
+      <canvas id="mesh" aria-hidden="true"></canvas>
+      <div class="hero__txt">
+        <p class="chip"><i></i>Open to new projects</p>
+        <h1>Building next-gen <em>digital experiences.</em></h1>
+        <p class="type"><span id="typed"></span><b>|</b></p>
+        <p class="lead">Full stack engineer at Devify Solutions in Peshawar. Three years of dashboards, SaaS products
+          and web apps.</p>
+        <div class="cta"><a href="#work" class="btn btn--p mag">View my work</a><a href="#contact" class="btn mag">Let's
+            chat</a></div>
       </div>
+    </section>
 
-      <div class="hero__avatar-wrap fade-up d3">
-        <div class="avatar-ring">
-          <img src="./profile.png" alt="M Haris" />
+    <section id="about" class="wrap">
+      <h2 class="rv">About and experience</h2>
+      <div class="split">
+        <div class="rv">
+          <p>I work across the whole product: the interface in React and Next.js, the API in Node and NestJS, and the
+            PostgreSQL database behind it.</p>
+          <p>Most of my work is complex dashboards, SaaS products, e-commerce and web applications for business clients.
+            That work is private, so this page shows what I can share.</p>
+          <div class="stack" id="stackGrid"></div>
         </div>
-        <div class="hero__stats">
-          <div class="stat-chip">
-            <div class="stat-chip__val">2+</div>
-            <div class="stat-chip__label">Yrs Exp</div>
+        <ol class="tl">
+          <li class="rv"><span>3 years · now</span>
+            <h3>Full Stack Developer</h3>
+            <p><a class="live" href="https://devifysolutions.com/" target="_blank" rel="noopener">Devify Solutions</a>,
+              Peshawar. Web applications for business clients, from interface to API to database.</p>
+          </li>
+          <li class="rv"><span>Recent</span>
+            <h3>Freelance</h3>
+            <p>Opened a freelance profile on Fiverr. Client work so far has come through Devify Solutions.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="work" class="wrap">
+      <h2 class="rv">Selected work</h2>
+      <div class="tools rv"><input id="q" type="search" placeholder="Search repos" aria-label="Search repos">
+        <div id="langs" class="pills"></div>
+      </div>
+      <div id="rail" class="rail">
+        <article class="card glass tilt feat">
+          <div class="thumb">
+            <pre>POST /api/v1/auth
+socket.on("match")
+peer.createOffer()</pre>
           </div>
-          <div class="stat-chip">
-            <div class="stat-chip__val">20+</div>
-            <div class="stat-chip__label">Projects</div>
+          <h3>Debate: live discussion platform</h3>
+          <p>Open source. Live video, real-time chat and cookie-based login, built end to end.</p>
+          <p class="tags">Next.js 16 · React 19 · TypeScript · NestJS 11 · PostgreSQL · Prisma · Socket.IO · WebRTC ·
+            Docker</p>
+          <a class="live" href="https://github.com/harisdevify/debateNextJS" target="_blank" rel="noopener">View
+            code</a>
+        </article>
+        <article class="card glass tilt feat">
+          <div class="thumb thumb--b">
+            <pre>// private
+dashboards
+saas · e-commerce</pre>
           </div>
-          <div class="stat-chip">
-            <div class="stat-chip__val">10+</div>
-            <div class="stat-chip__label">Clients</div>
-          </div>
+          <h3>Client projects</h3>
+          <p>Dashboards, SaaS products and e-commerce builds at Devify Solutions. Private, so no public links. I can
+            walk through them on a call.</p>
+        </article>
+        <div id="repos" style="display:contents">
+          <div class="card sk"></div>
+          <div class="card sk"></div>
         </div>
       </div>
     </section>
 
-    <div class="socials fade-up d5">
-      <a href="https://github.com/harisdevify" target="_blank" class="soc-link">
-        <span class="soc-icon">⌥</span> GitHub
-      </a>
-      <a href="https://www.linkedin.com/in/hariswebdev/" target="_blank" class="soc-link">
-        <span class="soc-icon">◈</span> LinkedIn
-      </a>
-      <a href="https://www.youtube.com/@programming360-f5s" target="_blank" class="soc-link">
-        <span class="soc-icon">▶</span> YouTube
-      </a>
-      <a href="https://www.tiktok.com/@yourhandle" target="_blank" class="soc-link">
-        <span class="soc-icon">◎</span> TikTok
-      </a>
-    </div>
-
-    <div class="divider"></div>
-
-    <section id="stack" class="stack-section fade-up d5">
-      <p class="section-label">Technology Stack</p>
-      <div class="stack-grid">
-        <div class="stack-card">
-          <div class="stack-card__head">
-            <div class="stack-card__ico ico--fe">🎨</div>
-            <div>
-              <h3>Frontend</h3>
-              <p class="stack-card__sub">UI & Experience</p>
-            </div>
-          </div>
-          <div class="tech-pills">
-            <span class="tech-pill"><span class="dot"></span>HTML5</span>
-            <span class="tech-pill"><span class="dot"></span>CSS3</span>
-            <span class="tech-pill"><span class="dot"></span>Tailwind</span>
-            <span class="tech-pill"><span class="dot"></span>JavaScript</span>
-            <span class="tech-pill"><span class="dot"></span>React.js</span>
-            <span class="tech-pill"><span class="dot"></span>Next.js</span>
-          </div>
+    <section id="github" class="wrap">
+      <h2 class="rv">GitHub <small id="ctotal"></small></h2>
+      <dl class="stats rv">
+        <div>
+          <dt>Public repos</dt>
+          <dd data-k="repos">–</dd>
         </div>
-
-        <div class="stack-card">
-          <div class="stack-card__head">
-            <div class="stack-card__ico ico--be">⚙️</div>
-            <div>
-              <h3>Backend</h3>
-              <p class="stack-card__sub">Servers & APIs</p>
-            </div>
-          </div>
-          <div class="tech-pills">
-            <span class="tech-pill"><span class="dot"></span>Node.js</span>
-            <span class="tech-pill"><span class="dot"></span>Express.js</span>
-            <span class="tech-pill"><span class="dot"></span>NestJS</span>
-            <span class="tech-pill"><span class="dot"></span>REST APIs</span>
-            <span class="tech-pill"><span class="dot"></span>PostgreSQL</span>
-          </div>
+        <div>
+          <dt>Contributions, last year</dt>
+          <dd data-k="contrib">–</dd>
         </div>
-
-        <div class="stack-card">
-          <div class="stack-card__head">
-            <div class="stack-card__ico ico--lg">🧠</div>
-            <div>
-              <h3>Core Logic</h3>
-              <p class="stack-card__sub">Algorithms & Data</p>
-            </div>
-          </div>
-          <div class="tech-pills">
-            <span class="tech-pill"><span class="dot"></span>Java</span>
-            <span class="tech-pill"><span class="dot"></span>C++</span>
-            <span class="tech-pill"><span class="dot"></span>Python</span>
-            <span class="tech-pill"><span class="dot"></span>DSA</span>
-            <span class="tech-pill"><span class="dot"></span>Git</span>
-          </div>
+        <div>
+          <dt>Followers</dt>
+          <dd data-k="followers">–</dd>
         </div>
+      </dl>
+      <div class="card glass heat rv">
+        <div id="heat" aria-label="GitHub contribution graph"></div>
+        <div class="legend">Less <i class="l0"></i><i class="l1"></i><i class="l2"></i><i class="l3"></i><i
+            class="l4"></i> More</div>
       </div>
+      <div class="card glass rv">
+        <h3>Languages across repos</h3>
+        <div id="lbar" class="lbar"></div>
+        <div id="llist" class="pills"></div>
+      </div>
+    </section>
+
+    <section id="contact" class="wrap">
+      <h2 class="rv">Contact</h2>
+      <form id="cf" class="glass form rv">
+        <div class="f"><input id="n" placeholder=" " required><label for="n">Your name</label></div>
+        <div class="f"><textarea id="m" rows="4" placeholder=" " required></textarea><label for="m">What are you
+            building?</label></div>
+        <button class="btn btn--p mag" type="submit">Send on WhatsApp</button>
+        <p class="note">This opens WhatsApp with your message ready to send.</p>
+      </form>
+      <div class="dock rv"><a class="mag glass" href="https://github.com/harisdevify" target="_blank"
+          rel="noopener">GitHub</a><a class="mag glass" href="https://www.linkedin.com/in/hariswebdev/" target="_blank"
+          rel="noopener">LinkedIn</a><a class="mag glass" href="https://www.youtube.com/@programming360-f5s"
+          target="_blank" rel="noopener">YouTube</a><a class="mag glass" href="https://wa.me/923048994097"
+          target="_blank" rel="noopener">WhatsApp</a></div>
+      <p class="foot">© 2026 M Haris · Peshawar, PK</p>
     </section>
   </main>
-
-  <footer class="footer">
-    <div class="footer__inner">
-      <p>Designed & built by <span>M Haris</span></p>
-      <p>WhatsApp: <span>+92304-8994097</span> · Peshawar, PK</p>
-      <p>© 2026 · All rights reserved</p>
-    </div>
-  </footer>
-
-  <script>
-    const obs = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((e) => {
-          if (e.isIntersecting) {
-            e.target.style.opacity = '1';
-            e.target.style.transform = 'translateY(0)';
-          }
-        });
-      },
-      { threshold: 0.1 }
-    );
-
-    document.querySelectorAll('.stack-card').forEach((el, i) => {
-      el.style.opacity = '0';
-      el.style.transform = 'translateY(20px)';
-      el.style.transition = `opacity 0.6s ease ${i * 0.1}s, transform 0.6s ease ${i * 0.1}s`;
-      obs.observe(el);
-    });
-  </script>
+  <div id="tip" class="tip" role="tooltip"></div>
+  <script src="profile.js"></script>
 </body>
 
 </html>
